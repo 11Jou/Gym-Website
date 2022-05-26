@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign Up</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <nav>
+            
+            <a href="index.html">Home</a>
+            <a href="about_us.html" target="_self">About us</a>
+            <a href="classes.html" target="_self">Classes</a>
+            <a href="Exercise.html" target="_self">Exercises</a>
+            <a href="time.html" target="_blank">Schedule</a>
+            <a href="web1.html" target="_self">Offers</a>
+            <a href="contact.html" target="_self">Contact us</a>
+            <a href="News page.html" target="_self">News</a>
+            <a href="login.html" target="_self">Sign in</a>
+            <div class="animation start-home"></div>
+          </nav>
+        <div>
+            <p class="word">Gym & Physical Fitness Centre</p>
+
+            <h1 class="Header"> Diamond <span>Gym</span></h1>
+        </div>
+
+        <div class = "box">
+            <img src="w.png" alt="logo" class="logo">
+            <form class="form" id="content-form" method="post" action="/signup" >
+                <label>Full Name</label> <br>
+                <input type="text" name="name" placeholder="Enter You Name"  id="name"> <br> <br>
+                <label>E-mail</label> <br>
+                <input type="text" name="email" placeholder="Enter Your Mail" id="email"> <br> <br>
+                <label>Password</label> <br>
+                <input type="password" name="password" placeholder="Enter Password " id="password"> <br> <br>
+                <label>Confirm Password</label> <br>
+                <input type="password" name="pass" placeholder="Confirm Password"> <br> <br>
+                <label>Your Gender</label> <br> 
+                <select class="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select> <br> <br>
+                <label>Subecraptoin</label> <br> 
+                <select class="sub">
+                    <option>3 Months</option>
+                    <option>6 Months</option>
+                    <option>1 Year</option>
+                </select> <br> <br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+<p>
+You can specify background images<br></p>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color:#2f3732;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0px 9px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav {
+    margin: 25px auto 0;
+    position: relative;
+    width: 900px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 0;
+    top:-112px;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight:bold;
+    text-decoration: none;
+    color: white;
+    cursor: pointer; 
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 100px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 100px;
+  }
+  a:nth-child(5) {
+    width: 100px;
+  }
+  a:nth-child(6) {
+    width: 100px;
+  }
+  a:nth-child(7) {
+    width: 100px;
+  }
+  a:nth-child(8) {
+    width: 100px;
+  }
+  a:nth-child(9) {
+    width: 100px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 100px;
+    left: 100px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 200px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 100px;
+    left: 300px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 100px;
+    left: 400px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-contact, a:nth-child(6):hover~.animation {
+    width: 100px;
+    left: 500px;
+    background-color:rgb(174, 23, 23);
+  }
+  nav .start-contact, a:nth-child(7):hover~.animation {
+    width: 120px;
+    left: 600px;
+    background-color:rgb(174, 23, 23);
+  } 
+  nav .start-contact, a:nth-child(8):hover~.animation {
+    width: 100px;
+    left: 700px;
+    background-color:rgb(191, 25, 25);
+  } 
+  nav .start-contact, a:nth-child(9):hover~.animation {
+    width: 100px;
+    left: 800px;
+    background-color:rgb(191, 25, 25);
+  } 
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  rgb(174, 23, 23);
+    padding: 0.3%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+  <img src="w.png" width="100px" height="100px"> 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about_us.html" target="_self">About us</a>
+    <a href="classes.html" target="_self">Classes</a>
+    <a href="Exercise.html" target="_self">Exercises</a>
+    <a href="time.html" target="_blank">Schedule</a>
+    <a href="web1.html" target="_self">Offers</a>
+    <a href="contact.html" target="_self">Contact us</a>
+    <a href="News page.html" target="_self">News</a>
+    <a href="login.html" target="_self">Sign in</a>
+    <div class="animation start-home"></div>
+  </nav>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="form.html">
+      <img src="10.jpg" alt="Cinque Terre" width="600" height="380">
+    </a>
+    <div class="desc"> <p>175 lE <strike>250 lE</strike> 30% OFF</p> </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="form.html">
+      <img src="1.jpg" alt="Forest" width="600" height="380">
+    </a>
+    <div class="desc"><p>   <strike>250 lE</strike>  20% OFF</p></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="form.html">
+      <img src="3.jpg" alt="Northern Lights" width="600" height="380">
+    </a>
+    <div class="desc"><p>400 lE <strike>500 lE</strike> 10% OFF</p></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="form.html">
+      <img src="57.jpg" alt="Mountains" width="600" height="380">
+    </a>
+    <div class="desc"><p>250 lE <strike>300 lE</strike> 16% OFF</p></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class.0="main-prod__option"> 
+  <label>offer</label> 
+  <span class="main-prod__guide"><svg width="1em" height="1em" viewBox="0 0 16 16" fill="#a41d23">
+  <path d="M5.02077 15.9992C4.61149 15.9992 4.20222 15.8439 3.89093 15.5326L0.467432 12.1084C-0.155811 11.4852 -0.155811 10.4713 0.467432 9.84806L9.84806 0.467432C10.472 -0.155811 11.4845 -0.155811 12.1084 0.467432L15.5326 3.8916C16.1558 4.51484 16.1558 5.52869 15.5326 6.15127L6.15127 15.5326C5.83932 15.8439 5.43071 15.9992 5.02077 15.9992ZM10.9786 0.665403C10.7299 0.665403 10.4953 0.762722 10.32 0.938696L0.938696 10.3193C0.762722 10.4953 0.665403 10.7293 0.665403 10.9779C0.665403 11.2265 0.762722 11.4612 0.938696 11.6365L4.36286 15.0606C4.72614 15.4239 5.31739 15.4239 5.68001 15.0606L15.0613 5.68001C15.4239 5.31672 15.4239 4.72614 15.0613 4.36286L11.6371 0.938696C11.4612 0.762722 11.2272 0.665403 10.9786 0.665403Z"></path></svg> offer Guide</span> 
+  <select name="option" class="form-control" onchange="callvalue(this.options[this.options.selectedIndex].value,this.options[this.options.selectedIndex].text,)"> 
+  <option value="0">fittness</option>
+  <option value="1">boxing</option>
+  <option value="2">bodybilding</option>
+  <option value="3">karate</option>
+  <option value="4">kung fu</option>
+  <option value="5">other</option>
+  <option value="6">offer:offer 1</option>
+  <option value="7">offer:offer 2</option>
+  <option value="8">offer:offer 3</option>
+  <option value="9">offer:offer 4</option>
+  <option value="10">offer:offer 1 and 2</option>
+  <option value="11">offer:offer 1 and 3</option>
+  <option value="12">offer:offer 2 and 3</option>
+ </select> 
+ 
+  <script type="text/javascript"> 
+  function callvalue(v,t) { 
+  document.prodform.sv.value = t;  
+  document.prodform.st.value = v;  
+  }  
+  </script>  </div>
+ <div class="main-prod__form">      
+  <form action="file:///C:/Users/Youss/OneDrive/Desktop/project%20test/views/new%203.html" id="prodform" name="prodform" method="post" enctype="multipart/form-data">    
+  <input type="hidden" name="pid" value="99221137">      
+  <input type="hidden" name="pname" value="The Gym Group to open new site in York">     
+  <input type="hidden" name="price" value="39">    
+  <input type="hidden" name="pfh" value="$">     
+  <input type="hidden" name="pimg" value="C:\Users\Asus\Desktop\web/10.jpg"> 
+  <input type="hidden" name="st" id="st" value="0">   
+  <input type="hidden" name="sv" id="sv" value="Onesize">   
+ 
+  <button  type="submit" class="main-prod__btn">book offer</button>    
+  </form>   
+  </div>
+
+<footer>
+  <p> © 2022 Warriors team. All rights reserved</p>
+</footer>
+
+</body>
+</html>

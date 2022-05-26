@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<title> news1 </title>
+<html>
+  <style>
+    body {
+        background: #2f3732;
+    }
+    li:not(:last-child) {
+    margin-bottom: 25px;
+    }
+    * { box-sizing: border-box; }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        width: 800px;
+    }
+    div { text-align: center; }
+    h1 { color: rgb(191, 25, 25); }
+    h5 { color: gray; }
+    p {
+        color: white;
+        font-size: 25px;
+    }
+    .photos img {
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        padding: 10px 10px 30px 10px;
+        background:  ;
+        border: solid 1px  rgb(191, 25, 25);
+    }
+    .photos img:hover {
+        -webkit-transform: rotate(380deg) scale(1.5);
+        -moz-transform: rotate(380deg) scale(1.5);
+        -o-transform: rotate(380deg) scale(1.5);
+        transform: rotate(380deg) scale(1.5);
+        z-index: 10;
+    }
+    hr { border: 1px solid black; }
+    .button1 {
+      border-radius: 4px;
+      background-color: rgb(174, 23, 23);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+    }
+    .button2 {
+      float:right;
+      border-radius: 4px;
+      background-color: rgb(174, 23, 23);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+    }
+    #demo {
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 14px;              
+    }
+  </style>
+
+  <body>
+    <div>
+      <h1> The Weightlifting Competition </h1>
+      <h3 id="demo"></h3>
+      <script>
+        function myFunction(){
+          document.getElementById("demo").innerHTML = "Sun, 15 May 2022 13:34:04 GMT";;
+        }
+      </script>
+      <div class="photos"> 
+        <img src="https://hub.theentertainerme.com/wp-content/uploads/2018/07/yoga-class-1200-x-800-1024x683.jpg" /> 
+      </div>
+      <p> At the request of many people, a new yoga class has been opened in our gym. </p>
+      <p> Two days a week, Sunday and Wednesday, from 5PM to 6PM </p>    
+      <p>  The physical benefits of yoga are embodied in improving the health of the body and reducing intractable pain </p>
+      <p>
+        The benefit of yoga is not limited to the body alone. These exercises combine physical benefits with mental and psychological benefits.
+        They include breathing exercises, meditation, and various postures that relax the body and mind and reduce tension.
+      </p>
+      </div>
+      <button class="button1" type="button" onclick= "read()" >BACK </button>
+      <button class="button2" type="button" onclick= "myFunction()" >News Date </button> 
+        <script>
+        function read() {
+        window.open("News page.html");}
+        </script>
+  </body>
+</html>

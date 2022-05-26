@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<title> News2 </title>
+<html>
+  <style>
+    body { background: #2f3732; }
+    li:not(:last-child) { margin-bottom: 25px; }
+    * { box-sizing: border-box; }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      width: 800px;
+    }
+    div { text-align: center; }
+    h1 { color: rgb(191, 25, 25); }
+    h5 { color: gray; }
+    p {
+      color: white;
+      font-size: 25px;
+    }
+    .photos img {
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      padding: 10px 10px 30px 10px;
+      border: solid 1px  rgb(191, 25, 25);
+    }
+    .photos img:hover {
+      -webkit-transform: rotate(380deg) scale(1.5);
+      -moz-transform: rotate(380deg) scale(1.5);
+      -o-transform: rotate(380deg) scale(1.5);
+      transform: rotate(380deg) scale(1.5);
+      z-index: 10;
+    }
+    hr { border: 1px solid black; }
+    .button1 {
+      border-radius: 4px;
+      background-color: rgb(174, 23, 23);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+    }
+    .button2 {
+      float:right;
+      border-radius: 4px;
+      background-color: rgb(174, 23, 23);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+    }
+    #demo {
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <div>
+      <h1> The Weightlifting Competition </h1>
+      <h3 id="demo"></h3>
+      <script>
+        function myFunction(){
+          document.getElementById("demo").innerHTML = "Tue, 10 May 2022 22:04:04 GMT";;
+        }
+      </script>
+    <div class="photos"> 
+        <img src="https://i0.wp.com/watanps.com/wp-content/uploads/2022/01/555949734135214.jpg?fit=1400%2C795&ssl=1">
+    </div>
+    <p> Today, our distinguished client <b>Ahmed El-Baz</b> won in the weightlifting competition. </p>
+    <P> We extend our congratulations to him :) </P>
+    <P> Weightlifting is one of the important sports that is widely used around the world,
+        especially as it has become a challenging field for many athletes. 
+    </P>
+    <p> It is one of the important types of sports for building and maintaining the muscles of the human body,
+        especially with age, and the more this sport is practiced at an early age, the better the benefit.
+    </p>
+    </div>
+    <button class="button1" type="button" onclick= "read()" >BACK </button> 
+    <button class="button2" type="button" onclick= "myFunction()" >News Date </button> 
+    <script>
+      function read() {
+      window.open("News page.html");}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+
+h2{
+    border-style: outset;
+    border-width: 6px;
+    color: white;
+    border-color: rgb(174, 23, 23);
+}
+#head{
+color: rgb(174, 23, 23);
+font-size: xx-large;
+font-style: italic;
+}
+body{
+    background-color: #2f3732;
+}
+.button{
+  background-color: white;
+  border: none;
+  color: #2f3732;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+p{
+color: white;
+font-size: larger;
+
+}
+.button:hover {
+    background-color: white; 
+    color: rgb(174, 23, 23);
+  }
+ 
+
+#black{
+background-color: #2f3732;
+
+}
+#orange{
+  background-color: rgb(174, 23, 23);
+
+}
+
+#white{
+  background-color: white;
+}
+
+.button1{
+  background-color: rgb(174, 23, 23);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #2f3732; 
+  color: white;
+}
+nav {
+  margin: 25px auto 0;
+  position: relative;
+  width: 900px;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 0;
+  top:-112px;
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight:bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer; 
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 100px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 100px;
+}
+a:nth-child(5) {
+  width: 100px;
+}
+a:nth-child(6) {
+  width: 100px;
+}
+a:nth-child(7) {
+  width: 100px;
+}
+a:nth-child(8) {
+  width: 100px;
+}
+a:nth-child(9) {
+  width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 100px;
+  left: 100px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 200px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 100px;
+  left: 300px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 100px;
+  left: 400px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-contact, a:nth-child(6):hover~.animation {
+  width: 100px;
+  left: 500px;
+  background-color:rgb(174, 23, 23);
+}
+nav .start-contact, a:nth-child(7):hover~.animation {
+  width: 120px;
+  left: 600px;
+  background-color:rgb(174, 23, 23);
+} 
+nav .start-contact, a:nth-child(8):hover~.animation {
+  width: 100px;
+  left: 700px;
+  background-color:rgb(191, 25, 25);
+} 
+nav .start-contact, a:nth-child(9):hover~.animation {
+  width: 100px;
+  left: 800px;
+  background-color:rgb(191, 25, 25);
+} 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  rgb(174, 23, 23);
+  padding: 0.3%;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<title> NEWS </title>
+<html>
+  <style>
+    body { background: #2f3732; }
+	  h2 {
+      border: 5px solid #696969;
+      text-align: center;
+      color: rgb(191, 25, 25);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 65px;
+    }
+    #demo {
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    li:not(:last-child) { margin-bottom: 25px; }
+    * { box-sizing: border-box; }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    nav {
+        margin: 25px auto 0;
+        position: relative;
+        width: 900px;
+        height: 50px;
+        border-radius: 12px;
+        font-size: 0;
+        top:11px;
+    }
+    nav a {
+      line-height: 50px;
+      height: 100%;
+      font-size: 15px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight:bold;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;  
+    }
+    nav .animation {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      transition: all .5s ease 0s;
+      border-radius: 8px;
+    }
+    a:nth-child(1) { width: 100px; }
+    a:nth-child(2) { width: 100px; }
+    a:nth-child(3) { width: 100px; }
+    a:nth-child(4) { width: 100px; }
+    a:nth-child(5) { width: 100px; }
+    a:nth-child(6) { width: 100px; }
+    a:nth-child(7) { width: 100px; }
+    a:nth-child(8) { width: 100px; }
+    a:nth-child(9) { width: 100px; }
+
+    nav .start-home, a:nth-child(1):hover~.animation {
+      width: 100px;
+      left: 0px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-about, a:nth-child(2):hover~.animation {
+      width: 100px;
+      left: 100px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-blog, a:nth-child(3):hover~.animation {
+      width: 100px;
+      left: 200px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-portefolio, a:nth-child(4):hover~.animation {
+      width: 100px;
+      left: 300px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-contact, a:nth-child(5):hover~.animation {
+      width: 100px;
+      left: 400px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-contact, a:nth-child(6):hover~.animation {
+      width: 100px;
+      left: 500px;
+      background-color:rgb(191, 25, 25);
+    }
+    nav .start-contact, a:nth-child(7):hover~.animation {
+      width: 100px;
+      left: 600px;
+      background-color:rgb(191, 25, 25);
+    } 
+    nav .start-contact, a:nth-child(8):hover~.animation {
+      width: 100px;
+      left: 700px;
+      background-color:rgb(191, 25, 25);
+    } 
+    nav .start-contact, a:nth-child(9):hover~.animation {
+      width: 100px;
+      left: 800px;
+      background-color:rgb(191, 25, 25);
+    } 
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(191, 25, 25);
+      padding: 0.3%;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+    .b{
+      display: flex;
+      flex-direction: column;
+      background: rgb(0,0,0,0,4);
+      color: white;
+      border: 2px solid ;
+      text-decoration: none;
+      padding: 10px 100px 10px 100px;
+      font-size: 30px;
+    }
+    .b:hover {
+        background: rgb(191, 25, 25);
+        opacity: 0.5;  
+    }
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: rgb(174, 23, 23);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px;
+      width: 150px;
+      height: 30px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+      color: white;
+    }
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    .button:hover span {
+      padding-right: 25px;
+    }
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
+
+  <body>
+    <div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_us.html" target="_self">About us</a>
+        <a href="classes.html" target="_self">Classes</a>
+        <a href="Exercise.html" target="_self">Exercises</a>
+        <a href="time.html" target="_self">Schedule</a>
+        <a href="web1.html" target="_self">Offers</a>
+        <a href="contact.html" target="_self">Contact us</a>
+        <a href="News page.html" target="_self">News</a>
+        <a href="login.html" target="_self">Sign in</a>
+        <div class="animation start-home"></div>
+      </nav>
+    </div>
+    <h2> NEWS </h2>
+    <div>
+      <iframe src="News1.html" name="News2" height="500px" width="100%"style="border:2px solid rgb(191, 25, 25);" title="Iframe Example"></iframe>
+      <button class="button" type="button" onclick= "read()" >READ HEAR </button> 
+      <script>
+        function read() {
+          window.open("News1.html");
+        }
+      </script>
+    </div>
+    <div>
+      <iframe src="News2.html" name="News2" height="500px" width="100%"style="border:2px solid rgb(191, 25, 25);"  title="Iframe Example"></iframe>
+      <button class="button" type="button" onclick= "read1()" >READ HEAR </button> 
+      <script>
+        function read1() {
+          window.open("News2.html");
+        }
+      </script>
+    </div>
+    <div>
+      <footer>
+            <p id="demo">© 2022 Warriors team.  All rights reserved</p>
+      </footer>
+    </div>
+  </body>   
+</html>
